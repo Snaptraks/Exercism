@@ -74,8 +74,3 @@ def score(dice, category):
 
     # if everything fails
     return 0
-
-
-if __name__ == '__main__':
-    s = score([1, 2, 3, 4, 5], Categories.LITTLE_STRAIGHT)
-    print(s)
