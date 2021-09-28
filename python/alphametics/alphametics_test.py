@@ -22,7 +22,8 @@ class AlphameticsTest(unittest.TestCase):
         )
 
     def test_puzzle_with_four_letters(self):
-        self.assertEqual(solve("AS + A == MOM"), {"A": 9, "S": 2, "M": 1, "O": 0})
+        self.assertEqual(solve("AS + A == MOM"),
+                         {"A": 9, "S": 2, "M": 1, "O": 0})
 
     def test_puzzle_with_six_letters(self):
         self.assertEqual(
@@ -60,7 +61,7 @@ class AlphameticsTest(unittest.TestCase):
         )
 
     # See https://github.com/exercism/python/pull/1358
-    @unittest.skip("extra-credit")
+    # @unittest.skip("extra-credit")
     def test_puzzle_with_ten_letters_and_199_addends(self):
         """This test may take a long time to run. Please be patient when running it."""
         puzzle = (
